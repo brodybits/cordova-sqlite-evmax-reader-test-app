@@ -1,25 +1,18 @@
-# Cordova sqlite bootstrap test app
-
-Template to demonstrate reproducible issues with Cordova sqlite plugin. May be used as a starter project.
+# Cordova sqlite evmax parallel reader test app
 
 **AUTHOR:** [@brodybits (Christopher J. Brody aka Chris Brody)](https://github.com/brodybits)
 
-**LICENSE:** [CC0 1.0 (public domain)](https://creativecommons.org/publicdomain/zero/1.0/)
+LICENSE: GPL or commercial
 
 **NOTE:** This project includes JQuery (2.2.4) and Bootstrap (3.3.6) under the MIT license. Otherwise there is no code copied from other sources.
 
 **IMPORTANT:** Whitelist and intent items are omitted from this test app.
 
-**NOTICE:** This test does not work on macOS ("osx") since it is not supported by `cordova-plugin-dialogs`.
-
 ## Dependencies
 
 - Bootstrap (3.3.6) - included (MIT license)
 - JQuery (2.2.4) - included (MIT license)
-- `cordova-plugin-dialogs` - specified in `config.xml`
 - Cordova sqlite plugin - please add the desired version from the Cordova CLI as described below
-
-NOTE: `cordova-plugin-dialogs` was added using the `--save` flag to ensure that this plugin would be automatically installed. It is recommended to use the `--save` flags to add any other plugins rather than adding such plugins to git.
 
 ## To add another plugin
 
@@ -56,13 +49,13 @@ cordova run android
 ## Functionality
 
 - Upon startup: open a database and CREATE the test table
-- Native alert dialog test
+- alert dialog test
 - Echo test
 - Self test
 - Location reload
 - String test 1
 - String test 2 (string as a SQL parameter)
-- Show record
+- Show record count (query parallel database reader)
 - Add record
 - Add 100 records from JavaScript object after delay
 - Delete all records
